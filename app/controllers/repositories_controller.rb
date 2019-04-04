@@ -1,8 +1,8 @@
 class RepositoriesController < ApplicationController
   def index
-    hash = {} 
-    hash["name"] = "index" 
-    hash["html_url"] = "stub" 
+    hash = {}
+    hash["name"] = "index"
+    hash["html_url"] = "stub"
     repo = GithubRepo.new(hash)
     @repos_array = repo.index()
   end
